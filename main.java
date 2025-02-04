@@ -4,7 +4,7 @@ interface Animal {
     void eat();
 }
 
-// Define an abstract class that implements the interface
+// Defin an abstract class that implement the interface
 abstract class Mammal implements Animal {
     String name;
 
@@ -12,28 +12,28 @@ abstract class Mammal implements Animal {
         this.name = name;
     }
 
-    // Abstract method
+    // Abstract methode
     abstract void move();
 
-    // Concrete method
+    // Concrete methode
     void sleep() {
         System.out.println(name + " is sleeping.");
     }
 }
 
-// Define a concrete class that extends the abstract class
+// Defin a concrete class that extends the abstract class
 class Dog extends Mammal {
     Dog(String name) {
         super(name);
     }
 
-    // Implement the abstract method
+    // Implement the abstract methode
     @Override
     void move() {
         System.out.println(name + " is running.");
     }
 
-    // Implement the interface methods
+    // Implement the interface methodes
     @Override
     public void makeSound() {
         System.out.println(name + " says: Woof!");
@@ -51,13 +51,13 @@ class Cat extends Mammal {
         super(name);
     }
 
-    // Implement the abstract method
+    // Implement the abstract methode
     @Override
     void move() {
         System.out.println(name + " is jumping.");
     }
 
-    // Implement the interface methods
+    // Implement the interface methodes
     @Override
     public void makeSound() {
         System.out.println(name + " says: Meow!");
@@ -75,13 +75,13 @@ public class Main {
         Dog dog = new Dog("Buddy");
         Cat cat = new Cat("Whiskers");
 
-        // Test Dog methods
+        // Test Dog methodes
         dog.makeSound();
         dog.eat();
         dog.move();
         dog.sleep();
 
-        // Test Cat methods
+        // Test Cat methodes
         cat.makeSound();
         cat.eat();
         cat.move();
